@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
 import {Page} from "../components/furniture/Page";
 import {ExternalLinkIcon} from "../components/icons/ExternalLinkIcon";
 import Image from 'next/image';

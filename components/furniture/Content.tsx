@@ -1,3 +1,1 @@
-import styles from './Content.module.scss'
-
-export const Content: React.FC = props => <main className={styles.main}>{props.children}</main>;
+export const Content: React.FC = props => <main className='w-full max-w-6xl mx-auto py-4'>{props.children}</main>;

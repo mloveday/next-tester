@@ -1,3 +1,1 @@
-import styles from './Header.module.scss'
-
-export const Header: React.FC = () => <header className={styles.header}>Miles Loveday</header>;
+export const Header: React.FC = () => <header className='flex justify-center align-center text-xl py-2'>Miles Loveday</header>;

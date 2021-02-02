@@ -1,3 +1,1 @@
-import styles from './Footer.module.scss'
-
-export const Footer: React.FC = () => <footer className={styles.footer}>Best viewed in a browser of some kind</footer>;
+export const Footer: React.FC = () => <footer className='w-full max-w-6xl mx-auto p-2 text-right text-sm text-gray-500'>Best viewed in a browser of some kind</footer>;
