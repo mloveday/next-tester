@@ -12,6 +12,7 @@ export default function Home() {
     <div>Totally over-engineered personal webpage for hosting <a href="/cv">a CV</a> and eventually various odds &
       sods like hobby projects, photos, etc. For those interested, source is <a
         href="https://github.com/mloveday/homepage">on Github</a></div>
+    <div>Written in Next.js, with tailwind for styling</div>
     <h3>Have some links to stuff:</h3>
     <ul>
       <li>
