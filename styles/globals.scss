@@ -4,12 +4,42 @@
 
 @layer base {
   a {
-    @apply text-blue-600 hover:underline;
+    @apply text-blue-600 hover:underline hover:text-blue-800 focus:text-blue-800 visited:text-purple-600;
   }
   h2 {
     @apply text-xl py-1;
   }
   h3 {
     @apply text-lg py-1;
+  }
+  button {
+    @apply btn;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-md text-center px-4 py-2 transition duration-200 select-none focus:outline-none;
+  }
+  .btn-primary {
+    @apply btn border-indigo-500 bg-indigo-500 hover:bg-indigo-600 text-white;
+  }
+  .btn-success {
+    @apply btn border-green-500 bg-green-500 hover:bg-green-600 text-white;
+  }
+  .btn-error {
+    @apply btn border-red-500 bg-red-500 hover:bg-red-600 text-white;
+  }
+  .btn-warning {
+    @apply btn border-yellow-500 bg-yellow-500 hover:bg-yellow-600 text-white;
+  }
+  .btn-info {
+    @apply btn border-teal-500 bg-teal-500 hover:bg-teal-600 text-white;
+  }
+  .btn-dark {
+    @apply btn border-gray-700 bg-gray-700 hover:bg-gray-800 text-white;
+  }
+  .btn-light {
+    @apply btn border-gray-100 bg-gray-100 hover:bg-gray-200 text-gray-600;
   }
 }
