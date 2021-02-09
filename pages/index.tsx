@@ -1,12 +1,9 @@
-import Head from 'next/head'
 import {Page} from "../components/furniture/Page";
 import {ExternalLinkIcon} from "../components/icons/ExternalLinkIcon";
 import Image from 'next/image';
+import {ALL_BLOG_POSTS} from "../static/BlogPosts.static";
 
-type BlogPost = { slug, title };
-
-export default function Home() {
-  const blogPosts: BlogPost[] = [];
+const Index: React.FC = () => {
   return (<Page><>
     <h2>Hello World!</h2>
     <div>Totally over-engineered personal webpage for hosting <a href="/cv">a CV</a> and eventually various odds &
@@ -36,9 +33,11 @@ export default function Home() {
     </ul>
     <h3>Some recent blog posts</h3>
     <ul>
-      {blogPosts.map(blogPost => <li key={blogPost.slug}><a href={`/blog/${blogPost.slug}`}>{blogPost.title}</a>
+      {ALL_BLOG_POSTS.map(blogPost => <li key={blogPost.slug}><a href={`/blog/${blogPost.slug}`}>{blogPost.title}</a>
       </li>)}
     </ul>
   </>
   </Page>)
 }
+
+export default Index;
